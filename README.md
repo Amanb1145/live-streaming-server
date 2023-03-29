@@ -8,7 +8,8 @@ Live Streaming Server based on NGINX and NGINX-RMTP-Module
 * STREAMING_SERVER_EMAIL - Email for generating certificates 
 * STREAMING_SERVER_DOMAIN - Domain of the certificates (Default: _)
 
-after setting up the configurations then build an image-
+after setting up the configurations then build an image with command-
+
 sudo docker-compose up -d --build
 
 ## Cerbot

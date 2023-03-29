@@ -7,7 +7,7 @@ Live Streaming Server based on NGINX and NGINX-RMTP-Module
 * ENABLE_SSL_CERTBOT - if set to "true" Certbot will be run to generate certificates (Default: false)
 * STREAMING_SERVER_EMAIL - Email for generating certificates 
 * STREAMING_SERVER_DOMAIN - Domain of the certificates (Default: _)
-
+sudo docker-compose up -d   --build
 ## Cerbot
 Command: certbot certonly --standalone -d $STREAMING_SERVER_DOMAIN --email $STREAMING_SERVER_EMAIL -n --agree-tos --expand --deploy-hook "nginx -s reload"
 
